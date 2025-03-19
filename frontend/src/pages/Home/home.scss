@@ -1,0 +1,14 @@
+@import '../../assets/styles/variable.scss';
+@import '../../assets/styles/mixins.scss';
+
+
+.main-home {
+  .features-main {
+    display: flex;
+    flex-direction: column;
+
+    @include responsive('tablet') {
+      flex-direction: row;
+    }
+  }
+}

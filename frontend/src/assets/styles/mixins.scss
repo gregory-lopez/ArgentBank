@@ -1,0 +1,14 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin responsive($breakpoint) {
+    @if $breakpoint == 'tablet' {
+      @media (min-width: 920px) {
+        @content;
+      }
+    }
+  }
+  

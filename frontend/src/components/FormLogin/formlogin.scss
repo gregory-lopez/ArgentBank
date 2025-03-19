@@ -1,0 +1,51 @@
+@import '../../assets/styles/variable.scss';
+
+
+.sign-in-content {
+    box-sizing: border-box;
+    background-color: white;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.input-wrapper label {
+    font-weight: bold;
+}
+
+.input-wrapper input{
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.input-remember {
+    display: flex;
+}
+
+.input-remember label {
+    margin-left: 0.25rem;
+}
+
+.sign-in-button {
+    display: block;
+    width: 107%;
+    border: none;
+    padding: 8px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+}
