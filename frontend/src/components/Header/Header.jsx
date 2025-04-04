@@ -22,10 +22,13 @@ const Header = () => {
       <div className="main-nav">
         {isLoggedIn ? (
           <>
-            <span className="main-nav-item">
+            <NavLink 
+            to="/profile" 
+            className="main-nav-item"
+            >
               <i className="fa fa-user-circle"></i>
               {user?.firstName}
-            </span>
+            </NavLink>
             <NavLink
               to="/"
               className="main-nav-item"
