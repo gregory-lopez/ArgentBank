@@ -11,6 +11,7 @@ const useAuth = () => {
   const signIn = async (email, password) => {
     try {
       const { token } = await login(email, password);
+      localStorage.setItem('token', token);
       dispatch(loginUser({ token }));
       navigate('/profile');
     } catch (err) {
@@ -20,6 +21,7 @@ const useAuth = () => {
   };
 
   const signOut = () => {
+    localStorage.removeItem('token');
     dispatch(logOut());
     navigate('/');
   };
